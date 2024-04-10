@@ -1,0 +1,109 @@
+*{
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.container {
+  display: flex;
+  height: 100vh;
+  margin: 0;
+  /* font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; Example new font */
+}
+
+
+.left-part,
+.right-part {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.left-part {
+  width: 40%;
+  background-color: #9cc1fd;
+}
+.left-part img {
+  width: 100%; /* Make the image take full width of the container */
+  height: auto; /* Automatically adjust the height to maintain aspect ratio*/
+  object-fit: cover; /* Cover the entire div while preserving aspect ratio */
+  max-height: 100vh; /* Prevent image from overflowing vertically */
+}
+
+.right-part {
+  width: 60%;
+  background-color: #3367d0;
+  color: #fff; /* Light colored text on the darker background */
+  position: relative;
+}
+
+h1 {
+  margin: 0;
+}
+
+h2 {
+  margin-bottom: 10px; /* Space between the heading and paragraph */
+}
+
+/* Right Styling */
+.form-header {
+  position: absolute; /* Make the element absolutely positioned */
+  top: 8%; /* Position it at 50% from the top */
+  left: 50%; /* Position it at 50% from the left */
+  transform: translate(-50%, -50%); /* Center based on its own dimensions */
+  padding: 20px;
+}
+.right-part p {
+  /* Assuming you only have one p-tag in the right-part */
+  text-align: center;
+}
+
+/* General Form Container */
+.appointment-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers form elements horizontally */
+  width: 80%; /* Adjust width as needed for the form */
+  margin: 0 auto; /* Centers form in its container */
+  padding-top: 50px;
+}
+
+/* Form Input Fields */
+.appointment-form input[type='text'],
+.appointment-form input[type='date'],
+.appointment-form input[type='email'],
+.appointment-form input[type='tel'],
+.appointment-form textarea {
+  width: 100%; /* Make inputs take full container width */
+  margin-bottom: 15px; /* Spacing between form elements */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+/* Disclaimer */
+.appointment-form .disclaimer {
+  text-align: center; /* Center the disclaimer text */
+}
+
+.appointment-form textarea {
+  width: 100%; /* Make the textarea take full available width */
+  height: 150px; /* Set a specific height in pixels */
+  margin-bottom: 15px; /* Add spacing below the textarea */
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.appointment-form button[type='submit'] {
+  background-color: #fff; /* Default white background */
+  color: #3367d0; /* Text color in your theme blue */
+  border: none;
+  padding: 12px 25px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+}
+
+.appointment-form button[type='submit']:hover {
+  background-color: #9cc1fd; /* Change to your theme blue on hover */
+  color: #fff; /* White text on hover */
+  cursor: hand; /* Change to the hand cursor */
+}

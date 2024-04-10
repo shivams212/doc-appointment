@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Doctor Appointment</title>
+    <!-- <link rel="icon" type="image/x-icon" href="./favicon.ico"> -->
+    <link href="./images/favicon.ico" rel="icon" type="image/x-icon">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-part">
+        <img src="./images/bg.jpg" alt="Image for Left Part" class="fixed-image" />
+      </div>
+      <div class="right-part">
+        <div class="form-header">
+          <h2>Book An Appointment Online!</h2>
+          <p>We have the best specialists in your region.</p>
+          <p>Quality, guarantee and professionalism are our slogan!</p>
+        </div>
+        <!--https://script.google.com/macros/s/AKfycbzp0vOQiEt6cQlgUX7tcHcFAjkF5FkvOC2VnGE66jZhjY2URTgLAZZPtVr3yHi093xC/exec  -->
+        <form class="appointment-form" method="POST">
+          <input type="text" name="fullName" placeholder="Full Name" required />
+          <input
+            type="date"
+            name="appointmentDate"
+            placeholder="Appointment Date"
+            required
+          />
+          <input
+            type="email"
+            name="emailAddress"
+            placeholder="Email Address"
+            required
+          />
+          <input
+            type="tel"
+            name="phoneNumber"
+            placeholder="Phone Number"
+            required
+          />
+          <input type="text" name="city" placeholder="City" required />
+
+          <textarea
+            name="problemDescription"
+            placeholder="Please, describe your problem."
+            required
+          ></textarea>
+
+          <p class="disclaimer">
+            Submission acknowledges agreement to the accuracy of the provided details.
+          </p>
+
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
